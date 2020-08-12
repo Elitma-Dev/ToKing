@@ -15,6 +15,7 @@ buildscript {
 }
 
 allprojects {
+    apply from: "${rootDir}/config/detekt/detekt.gradle"
     repositories {
         google()
         jcenter()
