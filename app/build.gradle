@@ -3,15 +3,15 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion androidVersions.compileSdk_version
+    buildToolsVersion androidVersions.buildTools_version
 
     defaultConfig {
         applicationId "br.com.prado.toking"
-        minSdkVersion 16
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion androidVersions.minSdk_version
+        targetSdkVersion androidVersions.targetSdk_version
+        versionCode androidVersions.version_code
+        versionName androidVersions.version_name
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -26,11 +26,11 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.core:core-ktx:1.1.0'
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation libraries.kotlin_stdlib
+    implementation libraries.core_ktx
+    implementation libraries.appcompat
+    testImplementation testLibraries.test_junit
+    androidTestImplementation testLibraries.test_junit
+    androidTestImplementation testLibraries.espresso_core
 
 }
