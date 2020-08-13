@@ -13,7 +13,7 @@ android {
         versionCode androidVersions.version_code
         versionName androidVersions.version_name
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner testLibraries.junit_runner
     }
 
     buildTypes {
@@ -29,6 +29,7 @@ android {
 }
 
 dependencies {
+    implementation libraries.android_material
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation libraries.kotlin_stdlib
     implementation libraries.core_ktx
