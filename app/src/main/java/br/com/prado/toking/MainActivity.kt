@@ -1,5 +1,16 @@
 package br.com.prado.toking
 
+import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.com.prado.toking.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity(R.layout.activity_main)
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+    }
+}
