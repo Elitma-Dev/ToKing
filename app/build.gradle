@@ -29,8 +29,8 @@ dependencies {
     implementation libraries.kotlin_stdlib
     implementation libraries.core_ktx
     implementation libraries.appcompat
+    implementation libraries.constraint_layout
     testImplementation testLibraries.test_junit
     androidTestImplementation testLibraries.test_junit
     androidTestImplementation testLibraries.espresso_core
-
 }
