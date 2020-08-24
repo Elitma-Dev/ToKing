@@ -2,9 +2,9 @@ package br.com.prado.toking
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.widget.ViewPager2
 import br.com.prado.toking.databinding.ActivityMainBinding
+import br.com.prado.toking.view.MainActivityAdapter
 
 class MainActivity : AppCompatActivity() {
 
