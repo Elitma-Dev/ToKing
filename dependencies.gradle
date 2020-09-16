@@ -34,7 +34,8 @@ ext {
             'constraint_layout'   : "androidx.constraintlayout:constraintlayout:${versions.constraint_layout_version}",
             'android_material'    : "com.google.android.material:material:${versions.material_version}",
             'lifecycle'           : "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle_version}",
-            'koin'                : "org.koin:koin-core:${versions.koin}"
+            'koin'                : "org.koin:koin-core:${versions.koin}",
+            'koinViewModel'       : "org.koin:koin-android-viewmodel:${versions.koin}"
     ]
 
     testLibraries = [
