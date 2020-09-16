@@ -37,6 +37,7 @@ dependencies {
     implementation libraries.constraint_layout
     implementation libraries.lifecycle
     implementation libraries.koin
+    implementation libraries.koinViewModel
 
     testImplementation testLibraries.test_junit
 
