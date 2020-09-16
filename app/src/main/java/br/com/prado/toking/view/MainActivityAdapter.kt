@@ -3,9 +3,6 @@ package br.com.prado.toking.view
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import br.com.prado.toking.view.AddMenuItemFragment
-import br.com.prado.toking.view.ConfigMenuItemFragment
-import br.com.prado.toking.view.StatisticsMenuItemFragment
 
 class MainActivityAdapter(fa: FragmentActivity) :
     FragmentStateAdapter(fa) {

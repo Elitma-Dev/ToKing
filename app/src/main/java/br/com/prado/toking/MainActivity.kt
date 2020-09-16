@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+
         binding.activityMainViewPager.adapter = MainActivityAdapter(this)
 
         viewPagerAndCallbackSettings()
